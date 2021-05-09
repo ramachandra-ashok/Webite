@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    width: 1170px;
+    margin:auto;
+}
+header{
+    background: url("./");
+    background-color:rgb(172, 78, 172);
+}
