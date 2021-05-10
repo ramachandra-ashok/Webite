@@ -6,30 +6,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Bug</title>
+    <title>Webite</title>
     <!--Fonr awsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!---Scroll reveal CDN-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/Webite-logos.jpeg" type="image/x-icon">
 </head>
-<body>
+<body >
     <header>
-        <div class="wrapper">
-            <div class="logo">
-                <img src="" alt="">
+        <div class="container">
+            <nav class="nav">
+                 <div class="menu-toggle">
+                     <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                    </div>
+                    <a href="index.html" class="logo"><img src="./img/Webite-logos_white.png" alt=""></a>
+                    <!-- Photo by oleg magni in pexels -->
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="#" class="nav-link ">Home</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Menu</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Service</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">X---X</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header> 
+    <!-- Header ends here -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <h2 class="sub-headline">
+                <span class="first-letter">W</span>elcome
+            </h2>
+            <h1 class="headline">To Webite</h1>
+            <div class="headline-description">
+                <div class="separator">
+                  <div class="line line-left"></div>
+                  <div class="asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>  
+                <div class="line line-right"></div>
+                </div>
+                <div class="single-animation">
+                    <h5>Ready to build for YOU</h5>
+                    <a href="#" class="btn cta-btn">Explore</a>
+                </div>
             </div>
-            <ul class="nav-area">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Service</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
         </div>
-
-        <div class="welcome-text">
-            <h1>We are Creative</h1>
-            <a href="#">Contact U s</a>
+    </section>
+    <!-- Hero ends here -->
+    <section class="discover-us">
+        <div class="container">
+            <div class="webite-info">
+                <div class="webite-description padding-left animate-left" >
+                    <div class="global-headline">
+                        <h2 class="sub-headline">
+                            <span class="first-letter">D</span>iscover
+                        </h2>
+                        <h1 class="headline headline-dark">Our Webite</h1>
+                        <div class="asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
+                    </div>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis fuga rerum, error, cum quod praesentium autem culpa perspiciatis unde repellendus maxime laudantium deserunt iure fugit sapiente! Veniam ea consectetur esse?</p>
+                    <a href="#" class="btn body-btn">About Us</a>
+                    </div>
+                    <div class="webite-info-img animate-right">
+                        <img src="./img/Website-Working_opt.jpg" alt="webiste-working">
+                    </div>
+            </div>
         </div>
-        
-    </header>
+    </section>
+    <!-- Discover Us ends here  -->
+<!-- Add More Sections here  -->
+<footer>
+    <div class="container">
+        <div class="back-to-top">
+            <a href="#hero"><i class="fas fa-chevron-up"></i></a>
+        </div>
+        <div class="footer-content">
+            <div class="footer-content-about animate-top">
+                <h4>About Webite</h4>
+                <div class="asterisk"><i class="fa fa-asterisk" aria-hidden="true"></i></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus adipisci omnis sed consequuntur amet voluptatum maxime officia voluptates, repellat alias, vitae quibusdam, laborum quos quaerat aliquid perspiciatis quasi! Expedita, quisquam.</p>
+            </div>
+            <div class="footer-content-divider animate-bottom">
+                <div class="social-media">
+                    <h4>Follow along</h4>
+                    <ul class="social-icons">
+                        <li>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-github"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="newsletter-container">
+                    <h4>Newsletter</h4>
+                    <form action="" class="newsletter-form">
+                        <input type="text" class="newsletter-input" placeholder="Your email address...">
+                        <button class="newsletter-btn" type="submit">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="./main.js"></script>
 </body>
 </html>
