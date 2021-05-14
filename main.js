@@ -1,3 +1,9 @@
+var db = firebase.database();
+db.ref('message1/').set({
+    username: 'ram',
+    email: 'email',
+    
+  });
 //Select element function 
 const selectElement= function(element){
     return document.querySelector(element);
@@ -46,3 +52,15 @@ var $buttons = jQuery('.nav-link');
 $buttons.on('click',function() {
   jQuery(this).toggleClass('active').siblings('.nav-link').removeClass('active');
 })
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+  
+
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+ 
+}
+

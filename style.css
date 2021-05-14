@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap'); */
 /*Gobal styles */
 *,
 *::before,
@@ -47,6 +47,12 @@ p{
 }
 
 .container{
+    width:100%;
+    max-width: 122.5rem;
+    margin: 0 auto;
+    padding: 0 2.4rem;
+}
+.containerC{
     width:100%;
     max-width: 122.5rem;
     margin: 0 auto;
@@ -165,6 +171,16 @@ header{
     text-align: center;
     
 }
+.heroC{
+    width:100%;
+    height: 100vh;
+    background: url("img/desk-lighting-light-sky-light-fixture-lamp-1617013-pxhere.com.jpg") center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    filter: blur(0px);
+}
 
 .sub-headline{
     font-size: 4.5rem;
@@ -177,6 +193,20 @@ header{
     animation: fadeUp .5s forwards;
     animation-delay: .5s;
 }
+.sub-headlineC{
+    font-size: 6rem;
+    font-family: var(--secondary-font);
+    color: var(--body-font-color);
+    line-height: .9  ;
+    font-weight: 200;
+    letter-spacing: 2px;
+    opacity: 0;
+    animation: fadeUp .5s forwards;
+    animation-delay: .5s;
+}
+
+
+
 
 .first-letter{
     text-transform: uppercase;
@@ -195,6 +225,60 @@ header{
    
 
 }
+.headlineC{
+    color: var(--secondary-font-color);
+    font-size: 3.7rem;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .5rem;
+    margin-right: -.5rem;
+    animation: scale .5s forwards;
+}
+
+#form-id{
+    font-family: var(--main-font);
+
+    font-size: 2rem;
+    text-align: center;
+    height: 100vh;
+    padding-top: 2rem;
+}
+#form-id div{
+    margin-top: 4rem;
+    
+}
+#form-id input,textarea{
+    
+    border: 2px solid var(--main-font-color-dark);
+    border-radius: 1rem;
+    height: 3rem;
+    width: 20rem;
+    padding-left: 1rem;
+    outline: none;
+}
+#form-id textarea{
+    width: 25rem;
+    height: 7rem;
+}
+#form-id input:hover,textarea:hover{
+    
+    border: 2px solid ;
+    border-radius: 1rem;
+    height: 3rem;
+    width: 20rem;
+    padding-left: 1rem;
+   color: var(--secondary-font-color);
+}
+
+#form-id a{
+    margin-top: 3rem;
+    background-color: var(--secondary-font-color);
+    color: #fff;
+}
+#form-id a:hover{
+   background-color: var(--main-font-color-dark);
+}
 
 .separator{
     display: flex;
@@ -202,6 +286,7 @@ header{
     justify-content: center;
 
 }
+
 
 .line{
     width: 100%;
@@ -214,6 +299,7 @@ header{
     animation-delay: .9s;
 
 }
+
 .line-right::before,
 .line-left::before{
     content: '';
@@ -222,7 +308,6 @@ header{
     color: #fff;
 
 }
-
 
 
 .asterisk{
@@ -436,6 +521,7 @@ footer{
 }
 
 
+
 /* Media Queries */
 @media screen and (min-width:900px) {
     section{
@@ -550,6 +636,9 @@ footer{
 
     .newsletter-btn{
         margin-left: 15.5rem;
+    }
+    .containerC{
+        margin-top: 20rem;
     }
     
 }
