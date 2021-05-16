@@ -7,9 +7,15 @@
     <title>Contact</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!---Scroll reveal CDN-->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+  
     <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./stylec.scss">
+    
     <link rel="shortcut icon" href="./img/Webite-logos.jpeg" type="image/x-icon">
     
 
@@ -55,24 +61,27 @@
                     <label for="username">
                         <i class="far fa-user"></i>Your Name
                     </label>
-                    <input name="username" type="text" placeholder="e.g. john doe" required>
+                    <input id="name" name="username" type="text" placeholder="e.g. Ankith Gavs" required>
                 </div>
                 <div class="field animate-bottom" tabindex="2">
                     <label for="email">
                         <i class="far fa-envelope"></i>Your Email
                     </label>
-                    <input name="email" type="text" placeholder="email@domain.com" required>
+                    <input id="email" name="email" type="text" placeholder="email@domain.com" required>
                 </div>
                 <div class="field animate-bottom" tabindex="3">
                     <label for="message" >
                         <i class="far fa-edit"></i>Your Message
                     </label>
-                    <textarea name="message" placeholder="type here" required></textarea>
+                    <textarea name="message" id="textFill" type="text" placeholder="type here" required></textarea>
                 </div>
-             <a href="#" class="btn cta-btn  animate-bottom">LETS GET CONNECTED</a>
+                <div class="alertR">*Please fill all the <br> Text Areas..</div>
+                <div class="alert">Your Message Sent... <br> We Are On Our Way...</div>
+                <button id="sendFor" class="btn cta-btn  animate-bottom" type="submit">LETS GET CONNECTED</button>
+             <!-- <a href="#" id="sendFor" class="btn cta-btn  animate-bottom" >LETS GET CONNECTED</a> -->
             </form> 
     </div>
-    <div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1552478210328_12239">
+    <!-- <div class="sqs-block code-block sqs-block-code" data-block-type="23" id="block-yui_3_17_2_1_1552478210328_12239">
         <div class="sqs-block-content">
             <div class="contact-box-2">
                 <h1>
@@ -83,7 +92,7 @@
                 </h2>
             </div>
         </div>
-    </div>
+    </div> -->
     
 
     <!-- //Footer -->
@@ -105,7 +114,7 @@
                         <h4>Follow along</h4>
                         <ul class="social-icons">
                             <li>
-                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/in/ramachandra-ashok/"><i class="fab fa-linkedin-in"></i></a>
                             </li>
                             <li>
                                 <a href=""><i class="fab fa-github"></i></a>
@@ -131,6 +140,9 @@
             </div>
         </div>
     </footer>
+    
+   
+    
     <script src="./main.js"></script>
 </body>
 </html>
